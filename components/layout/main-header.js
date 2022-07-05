@@ -16,7 +16,7 @@ const MainHeader = () => {
                     </li>
                 </ul>
             </nav>
-            <Link href="#" ><button className={classes.button}>Contact us</button></Link>
+            <Link href="/contact-us" ><button className={classes.button}>Contact us</button></Link>
         </header >
     )
 }

@@ -1,0 +1,16 @@
+.header {
+    margin-top: 10px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/images/sneakers/hero4.jpg");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 500%;
+    color: white;
+    text-shadow: 2px;
+}
