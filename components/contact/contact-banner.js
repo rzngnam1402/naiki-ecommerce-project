@@ -1,43 +1,45 @@
 import React from 'react'
-import classes from './banner.module.css'
+import classes from './contact-banner.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTag, faTruck, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
-const Banner = () => {
+const ContactBanner = () => {
     return (
         <div className={classes.container}>
             <div className={classes.content}>
-                <div className={classes.icon}><FontAwesomeIcon icon={faTruck} /></div>
+                <div className={classes.icon}><FontAwesomeIcon icon={faLocationDot} /></div>
                 <div className={classes.description}>
                     <div className={classes.title}>
-                        <h2>Fast shipping</h2>
+                        <h2>Hanoi, Vietnam</h2>
                     </div>
                     <div className={classes.subtitle}>
-                        <p>Deliveries Worldwide</p>
+                        <p>Tran Dai Nghia Street</p>
                     </div>
                 </div>
             </div>
 
             <div className={classes.content}>
-                <div className={classes.icon}><FontAwesomeIcon icon={faMoneyBillWave} /></div>
+                <div className={classes.icon}><FontAwesomeIcon icon={faPhone} /></div>
                 <div className={classes.description}>
                     <div className={classes.title}>
-                        <h2>Secure payment</h2>
+                        <h2>Contacts</h2>
                     </div>
                     <div className={classes.subtitle}>
-                        <p>Paypal or Credit Card</p>
+                        <p>Phone: 0966 244 758</p>
+                        <p>Email: nam.lg205004@sis.hust.edu.vn</p>
                     </div>
                 </div>
             </div>
 
             <div className={classes.content}>
-                <div className={classes.icon}><FontAwesomeIcon icon={faTag} /></div>
+                <div className={classes.icon}><FontAwesomeIcon icon={faFacebook} /></div>
                 <div className={classes.description}>
                     <div className={classes.title}>
-                        <h2>Great Offers</h2>
+                        <h2>Social Media</h2>
                     </div>
                     <div className={classes.subtitle}>
-                        <p>If you come to our shop</p>
+                        <p>Facebook: Nguyen Duc Minh</p>
                     </div>
                 </div>
             </div>
@@ -45,4 +47,4 @@ const Banner = () => {
     )
 }
 
-export default Banner
+export default ContactBanner
