@@ -5,7 +5,9 @@ import classes from './main-header.module.css'
 const MainHeader = () => {
     return (
         <header className={classes.header}>
-            <img className={classes.logo} src="images/logo/logo.png" alt="logo" />
+            <Link href="/">
+                <img className={classes.logo} src="images/logo/logo.png" alt="logo" />
+            </Link>
             <nav >
                 <ul className={classes.nav__links}>
                     <li >
