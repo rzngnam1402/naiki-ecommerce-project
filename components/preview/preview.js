@@ -17,10 +17,10 @@ const sneakers = [
         id: 1, name: "item1", img: 'images/lux/1.jpg'
     },
     {
-        id: 2, name: "item1", img: 'images/lux/2.jpg'
+        id: 2, name: "item1", img: 'images/lux/3.jpg'
     },
     {
-        id: 3, name: "item1", img: 'images/lux/3.jpg'
+        id: 3, name: "item1", img: 'images/lux/12.jpg'
     },
     {
         id: 4, name: "item1", img: 'images/lux/4.jpg'
@@ -36,6 +36,18 @@ const sneakers = [
     },
     {
         id: 8, name: "item1", img: 'images/lux/8.jpg'
+    },
+    {
+        id: 9, name: "item1", img: 'images/lux/9.jpg'
+    },
+    {
+        id: 10, name: "item1", img: 'images/lux/10.jpg'
+    },
+    {
+        id: 11, name: "item1", img: 'images/lux/11.jpg'
+    },
+    {
+        id: 12, name: "item1", img: 'images/lux/2.jpg'
     },
 ]
 
