@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './featured-sneaker.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const FeaturedSneaker = () => {
     return (
@@ -10,7 +12,7 @@ const FeaturedSneaker = () => {
                     <p>Bringing a new look the Nike Waffle One blances everything you love most about
                         heritage Nike running with fresh innovations.
                     </p>
-                    <button>Buy Now</button>
+                    <button>Buy Now <FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
 
                 <div className={classes.image}>
@@ -26,7 +28,7 @@ const FeaturedSneaker = () => {
                     <h1>Adidas Originals</h1>
                     <p>Discover the adidas streetwear collection
                     </p>
-                    <button>Buy Now</button>
+                    <button>Buy Now <FontAwesomeIcon icon={faArrowRight} /></button>
                 </div>
             </div>
         </>
