@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80%;
+}
+
+.description {
+    width: 30%;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.description h1 {
+    margin-bottom: 10px;
+}
+
+.description p {
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.description button {
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 95%;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.description button:hover {
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white;
+}
