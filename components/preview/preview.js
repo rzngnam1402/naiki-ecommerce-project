@@ -52,15 +52,22 @@ const sneakers = [
 ]
 
 const Preview = (props) => {
+
     return (
         <section className={classes.section}>
             <div className={classes.header}>
                 <div>
-                    <h1 className={classes.title}>Luxurious sneakers</h1>
+                    <h1 className={classes.title}>Luxurious Sneakers</h1>
                 </div>
 
             </div>
-            <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={4000}>
+            <Carousel
+                breakPoints={breakPoints}
+                enableAutoPlay
+                autoPlaySpeed={3000}
+                showArrows={false}
+                pagination={false}
+            >
                 {sneakers.map(item =>
                     <Item
                         key={item.id}

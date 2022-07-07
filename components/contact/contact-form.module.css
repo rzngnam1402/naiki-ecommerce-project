@@ -24,6 +24,7 @@
 .header h1 {
     font-size: 250%;
 }
+
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -62,4 +63,8 @@
     line-height: 26px;
     font-weight: 600;
     color: white;
+}
+
+.content button:hover {
+    opacity: .8;
 }
