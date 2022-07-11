@@ -11,7 +11,7 @@ const MainHeader = () => {
             <nav >
                 <ul className={classes.nav__links}>
                     <li >
-                        <Link href="#">Brands</Link>
+                        <Link href="/brands">Brands</Link>
                     </li >
                     <li >
                         <Link href="#">Products</Link>
