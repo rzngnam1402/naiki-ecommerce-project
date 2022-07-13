@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+model Bill {
+  BillID     Int          @id(map: "PK__Bill__11F2FC4A7ED4D34E") @default(autoincrement())
+  CustomerID Int?
+  Date       DateTime?    @db.Date
+  TotalPrice Decimal?     @db.Decimal(10, 2)
+  Customer   Customer?    @relation(fields: [CustomerID], references: [CustomerID], onDelete: NoAction, onUpdate: NoAction, map: "FK__Bill__CustomerID__44FF419A")
+  BillDetail BillDetail[]
+}
+
+model BillDetail {
+  BillDetailID Int      @default(autoincrement())
+  BillID       Int
+  ShoesID      Int
+  Price        Decimal? @db.Decimal(10, 2)
+  Quantity     Int?
+  Bill         Bill     @relation(fields: [BillID], references: [BillID], onUpdate: NoAction, map: "FK__BillDetai__BillI__47DBAE45")
+  Shoes        Shoes    @relation(fields: [ShoesID], references: [ShoesID], onUpdate: NoAction, map: "FK__BillDetai__Shoes__48CFD27E")
+
+  @@id([BillDetailID, BillID, ShoesID], map: "PK__BillDeta__C312BACBFE46A7D7")
+}
+
+model Customer {
+  CustomerID Int     @id(map: "PK__Customer__A4AE64B8A3DCB23F") @default(autoincrement())
+  Name       String? @db.NVarChar(40)
+  Age        Int?
+  Gender     String? @db.VarChar(10)
+  Tel        String? @db.VarChar(15)
+  Email      String? @db.NVarChar(40)
+  Bill       Bill[]
+}
+
+model Shoes {
+  ShoesID    Int          @id(map: "PK__Shoes__313A7A0AAA4E39EA") @default(autoincrement())
+  Name       String?      @db.NVarChar(40)
+  Brand      String?      @db.NVarChar(20)
+  Size       String?      @db.VarChar(10)
+  Color      String?      @db.NVarChar(40)
+  Type       String?      @db.NVarChar(10)
+  Gender     String?      @db.NVarChar(10)
+  Price      Decimal?     @db.Decimal(10, 2)
+  Image      String?      @db.NVarChar(100)
+  BillDetail BillDetail[]
+}
+
+model sysdiagrams {
+  name         String @db.NVarChar(128)
+  principal_id Int
+  diagram_id   Int    @id(map: "PK__sysdiagr__C2B05B6128BFE20E") @default(autoincrement())
+  version      Int?
+  definition   Bytes?
+
+  @@unique([principal_id, name], map: "UK_principal_name")
+}
