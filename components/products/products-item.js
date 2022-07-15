@@ -22,8 +22,8 @@ const ProductsItem = (props) => {
         <div className={classes.item__container}>
             <Link href={`/products/${ShoesID}`}>
                 <li className={classes.item}>
-                    <div className={classes.image}>
-                        <Image src={ImageLink + ".jpg"} alt={Name} width={280} height={280} />
+                    <div >
+                        <Image className={classes.image} src={ImageLink + ".jpg"} alt={Name} width={280} height={280} />
                     </div>
                     <div className={classes.content__container}>
                         <p className={classes.content__brand}>{Brand}</p>

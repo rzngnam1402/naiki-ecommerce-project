@@ -9,6 +9,18 @@
     margin-left: 3.2rem;
 }
 
+.image {
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
 .content__container {
     text-align: center;
 }
@@ -36,6 +48,4 @@
     letter-spacing: 1.5px;
 }
 
-@media screen and (max-width: 1024px) {
-    
-}
+@media screen and (max-width: 1024px) {}
