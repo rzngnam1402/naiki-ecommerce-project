@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classes from './banner.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTag, faTruck, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Banner = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, [])
     return (
-        <div className={classes.container}>
+        <div data-aos="fade-up" className={classes.container}>
             <div className={classes.content}>
                 <div className={classes.icon}><FontAwesomeIcon icon={faTruck} /></div>
                 <div className={classes.description}>

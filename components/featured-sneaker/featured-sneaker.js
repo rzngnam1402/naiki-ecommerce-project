@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classes from './featured-sneaker.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const FeaturedSneaker = () => {
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, [])
     return (
         <>
-            <div className={classes.container}>
+            <div data-aos="fade-left" className={classes.container}>
                 <div className={classes.description}>
                     <h1>Nike Waffle One</h1>
                     <p>Bringing a new look the Nike Waffle One blances everything you love most about
@@ -20,7 +25,7 @@ const FeaturedSneaker = () => {
                 </div>
             </div>
 
-            <div className={classes.container}>
+            <div data-aos="fade-right" className={classes.container}>
                 <div className={classes.image}>
                     <img src="images/Featured/1.jpg" alt="" />
                 </div>

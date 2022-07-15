@@ -1,9 +1,7 @@
 import React from 'react'
-import classes from './products.module.css'
 import useSWR from 'swr'
 import ProductsBanner from '../../components/products/products-banner';
 import ProductsHeader from '../../components/products/products-header';
-import ProductsItem from '../../components/products/products-item';
 import ProductsList from '../../components/products/products-list';
 
 const Products = (props) => {

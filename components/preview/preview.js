@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Carousel from 'react-elastic-carousel'
 import Item from './preview-item.js'
 import classes from './preview.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/dist/client/link'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 const breakPoints = [
@@ -54,9 +56,11 @@ const sneakers = [
 ]
 
 const Preview = (props) => {
-
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, [500])
     return (
-        <section className={classes.section}>
+        <section data-aos="fade-up" className={classes.section}>
             <div className={classes.header}>
                 <div>
                     <h1 className={classes.title}>Luxurious Sneakers</h1>

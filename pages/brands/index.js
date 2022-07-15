@@ -1,5 +1,4 @@
 import React from 'react'
-import classes from './brands.module.css'
 import useSWR from 'swr'
 
 const Brands = (props) => {
