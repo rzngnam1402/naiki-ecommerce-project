@@ -1,0 +1,24 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    margin-top: 3rem;
+}
+
+.header__icon {
+    margin-right: 0.5rem;
+}
+
+.header__title {
+    margin-left: 5rem;
+}
+
+.header__category li {
+    display: inline-block;
+    margin: auto 3rem;
+    letter-spacing: 1px;
+    font-size: 90%;
+    cursor: pointer;
+}
