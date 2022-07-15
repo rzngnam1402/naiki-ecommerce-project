@@ -3,6 +3,8 @@ import classes from './products.module.css'
 import useSWR from 'swr'
 import ProductsBanner from '../../components/products/products-banner';
 import ProductsHeader from '../../components/products/products-header';
+import ProductsItem from '../../components/products/products-item';
+import ProductsList from '../../components/products/products-list';
 
 const Products = (props) => {
     const { data, error } = useSWR('api/products', (url) => fetch(url).then(res => res.json()));
@@ -15,14 +17,7 @@ const Products = (props) => {
         <>
             <ProductsBanner />
             <ProductsHeader />
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
+            <ProductsList products={data.sort(() => Math.random() - 0.5)} />
         </>
     )
 }
