@@ -23,7 +23,7 @@ export default async function getAllBrands(req, res) {
     })
 
     try {
-        res.json(filteredBrands);
+        res.json(uniqBrands);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }

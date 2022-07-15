@@ -14,7 +14,7 @@ const MainHeader = () => {
                         <Link href="/brands">Brands</Link>
                     </li >
                     <li >
-                        <Link href="#">Products</Link>
+                        <Link href="/products">Products</Link>
                     </li>
                 </ul>
             </nav>
