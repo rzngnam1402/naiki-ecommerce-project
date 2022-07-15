@@ -1,6 +1,7 @@
 .section {
-    margin: 100px auto;
+    margin: 4rem auto;
     width: 97%;
+    margin-top: 6.25rem;
 }
 
 .header {
@@ -16,7 +17,7 @@
     display: inline-block;
     font-weight: 200%;
     font-size: 200%;
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .container {

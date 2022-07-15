@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './hero-content.module.css'
+import Link from 'next/dist/client/link'
 
 const HeroContents = () => {
     return (
@@ -8,7 +9,7 @@ const HeroContents = () => {
                 <div className={classes.items}>
                     <h1>NEW ARRIVALS</h1>
                     <p>Latest Summer Collection</p>
-                    <button>Order Now</button>  
+                    <Link href='/products'><button>Order Now</button></Link>
                 </div>
             </div>
 

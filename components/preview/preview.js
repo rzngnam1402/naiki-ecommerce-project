@@ -4,6 +4,8 @@ import Item from './preview-item.js'
 import classes from './preview.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/dist/client/link'
+
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -77,10 +79,12 @@ const Preview = (props) => {
                 )}
             </Carousel>
             <div className={classes.btn__container}>
-                <button>
-                    See All
-                    <FontAwesomeIcon className={classes.icon} icon={faArrowRight} />
-                </button>
+                <Link href='./products'>
+                    <button>
+                        See All
+                        <FontAwesomeIcon className={classes.icon} icon={faArrowRight} />
+                    </button>
+                </Link>
             </div>
         </section>
     )
