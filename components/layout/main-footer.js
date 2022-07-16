@@ -73,9 +73,9 @@ function MainFooter() {
                         iure dicta pariatur.
                     </p>
                     <div className={classes["sponsor-logo"]}>
-                        <img src="images/logo/paypal.png" alt="Paypal" />
-                        <img src="images/logo/american.png" alt="American Express" />
-                        <img src="images/logo/visa.png" alt="Visa" />
+                        <img src="/images/logo/paypal.png" alt="Paypal" />
+                        <img src="/images/logo/american.png" alt="American Express" />
+                        <img src="/images/logo/visa.png" alt="Visa" />
                     </div>
                 </div>
             </div>
