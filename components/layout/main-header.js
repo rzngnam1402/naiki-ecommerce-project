@@ -6,7 +6,7 @@ const MainHeader = () => {
     return (
         <header className={classes.header}>
             <Link href="/">
-                <img className={classes.logo} src="images/logo/logo.png" alt="logo" />
+                <img className={classes.logo} src="/images/logo/logo.png" alt="logo" />
             </Link>
             <nav >
                 <ul className={classes.nav__links}>
