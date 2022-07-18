@@ -40,11 +40,11 @@ const ProductsCard = (props) => {
     }
 
     useEffect(() => {
-        Aos.init({ duration: 500 });
-    }, [500])
+        Aos.init({ duration: 2000 });
+    }, [2000])
 
     return (
-        <HideOn atHeight height={2500}>
+        <HideOn atHeight height={2345}>
             <div id="hide" data-aos="fade-up" className={classes.container}>
                 <h2 className={classes.brand}>{detail.Brand}</h2>
                 <h2 className={classes.name}>{detail.Name}</h2>
