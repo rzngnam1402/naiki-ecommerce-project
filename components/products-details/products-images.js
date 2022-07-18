@@ -1,23 +1,22 @@
 import React, { useEffect } from 'react'
-import Image from 'next/image'
 import classes from './products-images.module.css'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
 const ProductsImages = (props) => {
     useEffect(() => {
-        Aos.init({ duration: 500 });
-    }, [500])
+        Aos.init({ duration: 2000 });
+    }, [2000])
 
     const { id } = props;
 
     return (
         <>
             <div className={classes.container}>
-                <Image data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/0.jpg`} width={1200} height={1200} />
-                <Image data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/1.jpg`} width={1200} height={1200} />
-                <Image data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/2.jpg`} width={1200} height={1200} />
-                <Image data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/3.jpg`} width={1200} height={1200} />
+                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/0.jpg`} />
+                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/1.jpg`} />
+                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/2.jpg`} />
+                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/3.jpg`} />
             </div>
         </>
     )

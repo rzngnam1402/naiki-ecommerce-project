@@ -1,9 +1,27 @@
 .container {
     display: inline-block;
     max-width: 500px;
-    margin: 9rem 32rem 6rem 32rem;
+    margin: 9rem 32rem 6rem 28rem;
 }
 
 .img {
-    margin-bottom: 6rem !important;
+    margin-bottom: 8rem !important;
+    width: 600px;
+}
+
+@media screen and (max-width: 1366px) {
+    .container {
+        max-width: 500px;
+        margin: 6rem 32rem 6rem 8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .img {
+        display: none;
+    }
 }
