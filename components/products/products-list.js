@@ -5,7 +5,6 @@ import classes from './products-list.module.css'
 const ProductsList = (props) => {
 
     const { products } = props
-    console.log(products[1]);
 
     return (
         <>

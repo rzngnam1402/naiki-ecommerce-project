@@ -16,12 +16,10 @@ const ProductsItem = (props) => {
         ImageLink,
     } = props;
 
-    console.log(Name, ImageLink);
-
     return (
         <div className={classes.item__container}>
             <Link href={`/products/${ShoesID}`}>
-                <li className={classes.item}>
+                <li className={classes.item} key={ShoesID}>
                     <div >
                         <Image className={classes.image} src={ImageLink + ".jpg"} alt={Name} width={280} height={280} />
                     </div>
