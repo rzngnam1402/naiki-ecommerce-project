@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import classes from './products-card.module.css'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { HideOn } from 'react-hide-on-scroll'
 
 const getSize = (sizeString) => {
     const firstSizeRange = 0;
@@ -43,32 +44,34 @@ const ProductsCard = (props) => {
     }, [500])
 
     return (
-        <div data-aos="fade-up" className={classes.container}>
-            <h2 className={classes.brand}>{detail.Brand}</h2>
-            <h2 className={classes.name}>{detail.Name}</h2>
-            <h3 className={classes.type}>{detail.Gender} {detail.Type}</h3>
-            <p className={classes.price}>{`$${detail.Price}.00`}</p>
+        <HideOn atHeight height={2500}>
+            <div id="hide" data-aos="fade-up" className={classes.container}>
+                <h2 className={classes.brand}>{detail.Brand}</h2>
+                <h2 className={classes.name}>{detail.Name}</h2>
+                <h3 className={classes.type}>{detail.Gender} {detail.Type}</h3>
+                <p className={classes.price}>{`$${detail.Price}.00`}</p>
 
-            {size === -1 ? (
-                <>
-                    <p className={classes.size}>Selected size: </p>
-                    <select className={classes.select}>
-                        <option value="0">{detail.Size}</option>
-                    </select>
-                </>
-            ) : (
-                <>
-                    <p className={classes.size}>Selected size: </p>
-                    <select className={classes.select}>
-                        {sizeRange.map((size, index) => (
-                            <option value={index}>{size}</option>
-                        ))}
-                    </select>
-                </>
-            )}
-            <br />
-            <button className={classes.button}>Add to cart</button>
-        </div>
+                {size === -1 ? (
+                    <>
+                        <p className={classes.size}>Selected size: </p>
+                        <select className={classes.select}>
+                            <option value="0">{detail.Size}</option>
+                        </select>
+                    </>
+                ) : (
+                    <>
+                        <p className={classes.size}>Selected size: </p>
+                        <select className={classes.select}>
+                            {sizeRange.map((size, index) => (
+                                <option value={index}>{size}</option>
+                            ))}
+                        </select>
+                    </>
+                )}
+                <br />
+                <button className={classes.button}>Add to cart</button>
+            </div>
+        </HideOn>
     )
 }
 
