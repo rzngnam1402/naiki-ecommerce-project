@@ -10,12 +10,16 @@ const MainHeader = () => {
             </Link>
             <nav >
                 <ul className={classes.nav__links}>
-                    <li >
-                        <Link href="/brands">Brands</Link>
-                    </li >
-                    <li >
-                        <Link href="/products">Products</Link>
-                    </li>
+                    <Link href="/brands">
+                        <li >
+                            Brands
+                        </li >
+                    </Link>
+                    <Link href="/products">
+                        <li >
+                            Products
+                        </li>
+                    </Link>
                 </ul>
             </nav>
             <Link href="/contact-us" ><button className={classes.button}>Contact us</button></Link>
