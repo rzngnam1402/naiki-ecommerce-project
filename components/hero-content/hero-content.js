@@ -15,7 +15,7 @@ const HeroContents = () => {
                 <div  className={classes.items}>
                     <h1>NEW ARRIVALS</h1>
                     <p>Latest Summer Collection</p>
-                    <Link href='/products'><button>Order Now</button></Link>
+                    <Link href='/products'><button>Discover Now</button></Link>
                 </div>
             </div>
 
