@@ -1,5 +1,7 @@
 import React from 'react'
 import useSWR from 'swr'
+import BrandsImages from '../../components/brands/brands-images';
+import ProductsBanner from '../../components/products/products-banner';
 
 const Brands = (props) => {
 
@@ -7,26 +9,16 @@ const Brands = (props) => {
     if (error) return <div>An error occured.</div>
     if (!data) return <div>Loading ...</div>
 
-    console.log(data);
+
+    const brand_list = [];
+    data.map(brand => brand_list.push(brand.Brand));
+
+    console.log(brand_list);
 
     return (
         <>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <p>lmao</p>
-            <ul>
-                {data.map((brand, index) => (
-                    <li key={index}>{brand.Brand}</li>
-                ))}
-            </ul>
+            <ProductsBanner />
+            <BrandsImages brands={brand_list} />
         </>
     )
 }
