@@ -13,10 +13,10 @@ const ProductsImages = (props) => {
     return (
         <>
             <div className={classes.container}>
-                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/0.jpg`} />
-                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/1.jpg`} />
-                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/2.jpg`} />
-                <img data-aos="fade-right" className={classes.img} src={`/images/ImageDetails/${id}/3.jpg`} />
+                <img data-aos="fade-right" data-aos-delay="200" className={classes.img} src={`/images/ImageDetails/${id}/0.jpg`} />
+                <img data-aos="fade-right" data-aos-delay="200" className={classes.img} src={`/images/ImageDetails/${id}/1.jpg`} />
+                <img data-aos="fade-right" data-aos-delay="200" className={classes.img} src={`/images/ImageDetails/${id}/2.jpg`} />
+                <img data-aos="fade-right" data-aos-delay="200" className={classes.img} src={`/images/ImageDetails/${id}/3.jpg`} />
             </div>
         </>
     )
