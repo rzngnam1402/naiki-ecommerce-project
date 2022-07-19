@@ -6,7 +6,7 @@ import "aos/dist/aos.css"
 
 const BrandsImages = (props) => {
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 1000, once: true });
     }, [])
 
     const { brands } = props
