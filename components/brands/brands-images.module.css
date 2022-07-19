@@ -15,6 +15,7 @@
 
 .gallery__img:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .gallery__item_1 {

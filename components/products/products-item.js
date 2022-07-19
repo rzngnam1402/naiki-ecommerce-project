@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classes from './products-item.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const ProductsItem = (props) => {
     const {
@@ -16,8 +18,12 @@ const ProductsItem = (props) => {
         ImageLink,
     } = props;
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [1000])
+
     return (
-        <div className={classes.item__container}>
+        <div data-aos="fade-up" className={classes.item__container}>
             <Link href={`/products/${ShoesID}`}>
                 <li className={classes.item} key={ShoesID}>
                     <div >

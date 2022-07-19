@@ -2,6 +2,7 @@ import React from 'react'
 import useSWR from 'swr'
 import BrandsImages from '../../components/brands/brands-images';
 import ProductsBanner from '../../components/products/products-banner';
+import Banner from '../../components/banner/banner';
 
 const Brands = (props) => {
 

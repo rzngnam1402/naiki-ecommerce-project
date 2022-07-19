@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import classes from './products-header.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const ProductsHeader = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
+
     return (
         <>
-            <div className={classes.header__container}>
+            <div data-aos="fade-right" className={classes.header__container}>
                 <h2 className={classes.header__title}>All sneakers</h2>
                 <div >
                     <ul className={classes.header__category}>
