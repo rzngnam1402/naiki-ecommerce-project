@@ -10,12 +10,9 @@ const Brands = (props) => {
     if (error) return <div>An error occured.</div>
     if (!data) return <div>Loading ...</div>
 
-
     const brand_list = [];
     data.map(brand => brand_list.push(brand.Brand));
-
-    console.log(brand_list);
-
+    
     return (
         <>
             <ProductsBanner />
