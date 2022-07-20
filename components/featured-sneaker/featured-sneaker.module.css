@@ -36,3 +36,8 @@
 .description button:hover {
     opacity: 0.6;
 }
+
+.image:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
