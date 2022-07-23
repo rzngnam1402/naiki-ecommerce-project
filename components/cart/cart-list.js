@@ -13,7 +13,7 @@ const CartList = () => {
                     <p>Delete</p>
                 </li>
                 <h2 className={classes.empty}>
-                    There are not any product yet !!~
+                    There are not any products yet !!~
                 </h2>
             </ul>
         </>
