@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import classes from './main-header.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 const MainHeader = () => {
     return (
@@ -19,6 +21,9 @@ const MainHeader = () => {
                         <li >
                             Products
                         </li>
+                    </Link>
+                    <Link href="./cart">
+                        <FontAwesomeIcon className={classes.nav__icons} icon={faCartShopping} />
                     </Link>
                 </ul>
             </nav>
