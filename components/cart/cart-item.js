@@ -24,7 +24,7 @@ const CartItem = (props) => {
                 {`$${data.Price}`}
             </p>
             <p className={classes["item-price"]}>
-                1
+                {data.Price / data.Price}
             </p>
             <div className={classes["item-price"]}>
                 {`$${data.Price}`}

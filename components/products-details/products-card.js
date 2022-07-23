@@ -42,7 +42,8 @@ const ProductsCard = (props) => {
     }
 
     const ShoppingCartCtx = useContext(ShoppingCartContext);
-    function onSubmitHandler() {
+    function onSubmitHandler(event) {
+        event.preventDefault();
         ShoppingCartCtx.addToCart(detail);
     }
 
