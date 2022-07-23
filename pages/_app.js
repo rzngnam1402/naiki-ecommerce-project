@@ -1,13 +1,17 @@
 import '../styles/globals.css'
 import Layout from '../components/layout/layout'
 import NextNProgress from "nextjs-progressbar";
+import { ShoppingCartContextProvider } from '../store/shopping-cart-context';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <NextNProgress color="#808080" />
-      <Component {...pageProps} />
-    </Layout>
+    <ShoppingCartContextProvider>
+      <title>Naiki - a Sneaker shop website</title>
+      <Layout>
+        <NextNProgress color="#808080" />
+        <Component {...pageProps} />
+      </Layout>
+    </ShoppingCartContextProvider>
   )
 }
 

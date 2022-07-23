@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import classes from './products-card.module.css'
+import ShoppingCartContext from '../../store/shopping-cart-context'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 import { HideOn } from 'react-hide-on-scroll'
@@ -29,6 +30,7 @@ const ProductsCard = (props) => {
 
     const detail = data[0];
 
+    //render the sizeRange 
     const size = getSize(detail.Size);
     let sizeRange = new Array(size.lastSizeRange - size.firstSizeRange || 0)
     if (size !== -1) {
@@ -37,6 +39,11 @@ const ProductsCard = (props) => {
             sizeRange[j] = num;
             num++;
         }
+    }
+
+    const ShoppingCartCtx = useContext(ShoppingCartContext);
+    function onSubmitHandler() {
+        ShoppingCartCtx.addToCart(detail);
     }
 
     useEffect(() => {
@@ -69,7 +76,7 @@ const ProductsCard = (props) => {
                     </>
                 )}
                 <br />
-                <button className={classes.button}>Add to cart</button>
+                <button onClick={onSubmitHandler} className={classes.button}>Add to cart</button>
             </div>
         </HideOn>
     )

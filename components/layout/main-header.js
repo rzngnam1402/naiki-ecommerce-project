@@ -22,7 +22,7 @@ const MainHeader = () => {
                             Products
                         </li>
                     </Link>
-                    <Link href="./cart">
+                    <Link href="/cart">
                         <FontAwesomeIcon className={classes.nav__icons} icon={faCartShopping} />
                     </Link>
                 </ul>
