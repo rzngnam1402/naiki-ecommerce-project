@@ -5,7 +5,7 @@ const CartHeader = () => {
     return (
         <>
             <h1 className={classes.header}>
-                Your Receipt
+                Your Products
             </h1>
         </>
     )

@@ -4,8 +4,6 @@ const ShoppingCartContext = createContext({
     products: [],
     cart: [],
     addToCart: function () { },
-    reduceQuantity: function () { },
-    increaseQuantity: function () { },
     removeProduct: function () { },
     totalPrice: function () { },
 });
@@ -23,26 +21,8 @@ export function ShoppingCartContextProvider(props) {
         }
     }
 
-    function reduceQuantity(id) {
-        cart.map((item) => {
-            if (item.ShoesID === id) {
-                item.Count === 1 ? (item.Count = 1) : (item.Count -= 1);
-            }
-        });
-        setCart([...cart]); // mutation
-    }
-
-    function increaseQuantity(id) {
-        cart.map((item) => {
-            if (item.ShoesID === id) {
-                item.Count += 1;
-            }
-        });
-        setCart([...cart]);
-    }
-
     function removeProduct(id) {
-        if (window.confirm("Bạn muốn xóa sản phẩm này?")) {
+        if (window.confirm("Do you want to delete this product?")) {
             cart.forEach((item, index) => {
                 if (item.ShoesID === id) {
                     cart.splice(index, 1);
@@ -63,8 +43,6 @@ export function ShoppingCartContextProvider(props) {
         // products: allProducts,
         cart: cart,
         addToCart: addToCartHandler,
-        reduceQuantity: reduceQuantity,
-        increaseQuantity: increaseQuantity,
         removeProduct: removeProduct,
         totalPrice: totalPrice,
     };

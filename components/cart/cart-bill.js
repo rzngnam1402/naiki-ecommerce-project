@@ -10,8 +10,6 @@ const CartBill = () => {
     const { cart } = ShoppingCartCtx;
     const totalPrice = ShoppingCartCtx.totalPrice();
 
-    console.log(cart);
-
     return (
         <div className={classes["cart-bill"]}>
             <div className={classes["cart-bill-header"]}>Your Bill</div>
@@ -34,7 +32,7 @@ const CartBill = () => {
                 </div>
             </div>
             <button className={classes["check-out"]} >
-                Order
+                Checkout
             </button>
         </div>
     )
