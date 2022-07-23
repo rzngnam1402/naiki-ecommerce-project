@@ -9,8 +9,9 @@ const ProductsList = (props) => {
     return (
         <>
             <ul className={classes.list}>
-                {products.map(product => 
+                {products.map(product =>
                     <ProductsItem
+                        key={product.ShoesID}
                         ShoesID={product.ShoesID}
                         Name={product.Name}
                         Brand={product.Brand}

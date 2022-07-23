@@ -71,7 +71,7 @@ const ProductsCard = (props) => {
                         <p className={classes.size}>Selected size: </p>
                         <select className={classes.select}>
                             {sizeRange.map((size, index) => (
-                                <option value={index}>{size}</option>
+                                <option key={index} value={index}>{size}</option>
                             ))}
                         </select>
                     </>

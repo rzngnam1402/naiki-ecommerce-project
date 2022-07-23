@@ -39,8 +39,8 @@ const CartList = () => {
                     <p>Total</p>
                     <p>Delete</p>
                 </li>
-                {cartItems.map((item) => (
-                    <CartItem data={item} />
+                {cartItems.map((item, index) => (
+                    <CartItem key={index} data={item} />
                 ))}
             </ul>
         </>
