@@ -19,10 +19,10 @@ const BrandsHeader = (props) => {
                 <h2 className={classes.header__title}>{brand}</h2>
                 <div >
                     <ul className={classes.header__category}>
-                        <li><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />CATEGORY</li>
-                        <li><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />PRICE</li>
-                        <li><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />GENDER</li>
-                        <li><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />SIZE</li>
+                        <li key={`CATEGORY`}><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />CATEGORY</li>
+                        <li key={`PRICE`}><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />PRICE</li>
+                        <li key={`GENDER`}><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />GENDER</li>
+                        <li key={`SIZE`}><FontAwesomeIcon className={classes.header__icon} icon={faCaretDown} />SIZE</li>
                     </ul>
                 </div>
             </div>
