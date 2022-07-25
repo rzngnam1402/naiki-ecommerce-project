@@ -63,7 +63,7 @@ const Preview = (props) => {
         <section data-aos="fade-up" className={classes.section}>
             <div className={classes.header}>
                 <div>
-                    <h1 className={classes.title}>Luxurious Sneakers</h1>
+                    <h1 className={classes.title}>Incoming Arrivals</h1>
                 </div>
 
             </div>
