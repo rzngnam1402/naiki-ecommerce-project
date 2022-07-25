@@ -12,7 +12,7 @@ export function ShoppingCartContextProvider(props) {
     const [cart, setCart] = useState([]);
 
     function addToCartHandler(product) {
-        const check = cart.every((item) => item.ShoesID !== product.ShoesID);
+        const check = cart.every((item) => item.shoesid !== product.shoesid);
 
         if (check) {
             setCart([...cart, { ...product }]);
@@ -24,7 +24,7 @@ export function ShoppingCartContextProvider(props) {
     function removeProduct(id) {
         if (window.confirm("Do you want to delete this product?")) {
             cart.forEach((item, index) => {
-                if (item.ShoesID === id) {
+                if (item.shoesid === id) {
                     cart.splice(index, 1);
                 }
             });
@@ -34,7 +34,7 @@ export function ShoppingCartContextProvider(props) {
 
     function totalPrice() {
         const res = cart.reduce((prev, item) => {
-            return Number(prev) + Number(item.Price);
+            return Number(prev) + Number(item.price);
         }, 0);
         return `$${res}`;
     }

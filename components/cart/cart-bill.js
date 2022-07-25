@@ -17,10 +17,10 @@ const CartBill = () => {
                 <div className={classes["cart-bill-item-container"]}>
                     {
                         cart.map((item) => (
-                            <div className={classes["cart-bill-item"]} key={item.ShoesID}>
-                                <h3 className={classes.h3}>{item.Name}</h3>
+                            <div className={classes["cart-bill-item"]} key={item.shoesid}>
+                                <h3 className={classes.h3}>{item.name}</h3>
                                 <p>
-                                    {`$${item.Price}`}
+                                    {`$${item.price}`}
                                 </p>
                             </div>
                         ))

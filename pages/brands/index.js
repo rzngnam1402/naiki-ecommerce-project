@@ -11,7 +11,7 @@ const Brands = (props) => {
     if (!data) return <div>Loading ...</div>
 
     const brand_list = [];
-    data.map(brand => brand_list.push(brand.Brand));
+    data.map(item => brand_list.push(item.brand));
     
     return (
         <>

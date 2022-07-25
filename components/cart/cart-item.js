@@ -11,23 +11,23 @@ const CartItem = (props) => {
     const { data } = props
 
     function remove() {
-        ShoppingCartCtx.removeProduct(data.ShoesID);
+        ShoppingCartCtx.removeProduct(data.shoesid);
     }
 
     return (
-        <li key={data.ShoesID} className={classes["cart-item"]}>
+        <li key={data.shoesid} className={classes["cart-item"]}>
             <div className={classes["item-name"]}>
-                <img className={classes.img} src={data.Image + ".jpg"} alt={data.Name} />
-                <h2>{data.Name}</h2>
+                <img className={classes.img} src={data.image + ".jpg"} alt={data.name} />
+                <h2>{data.name}</h2>
             </div>
             <p className={classes["item-price"]}>
-                {`$${data.Price}`}
+                {`$${data.price}`}
             </p>
             <p className={classes["item-price"]}>
-                {data.Price / data.Price}
+                {data.price / data.price}
             </p>
             <div className={classes["item-price"]}>
-                {`$${data.Price}`}
+                {`$${data.price}`}
             </div>
             <button className={classes["delete-item"]} onClick={remove}>
                 X

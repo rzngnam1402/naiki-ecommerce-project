@@ -31,11 +31,11 @@ const ProductsCard = (props) => {
     const detail = data[0];
 
     //render the sizeRange 
-    const size = getSize(detail.Size);
-    let sizeRange = new Array(size.lastSizeRange - size.firstSizeRange || 0)
-    if (size !== -1) {
-        let num = size.firstSizeRange;
-        for (let j = 0; j <= size.lastSizeRange - size.firstSizeRange; j++) {
+    const shoes_size = getSize(detail.size);
+    let sizeRange = new Array(shoes_size.lastSizeRange - shoes_size.firstSizeRange || 0)
+    if (shoes_size !== -1) {
+        let num = shoes_size.firstSizeRange;
+        for (let j = 0; j <= shoes_size.lastSizeRange - shoes_size.firstSizeRange; j++) {
             sizeRange[j] = num;
             num++;
         }
@@ -54,16 +54,16 @@ const ProductsCard = (props) => {
     return (
         <HideOn atHeight height={2345}>
             <div id="hide" data-aos="fade-up" className={classes.container}>
-                <h2 className={classes.brand}>{detail.Brand}</h2>
-                <h2 className={classes.name}>{detail.Name}</h2>
-                <h3 className={classes.type}>{detail.Gender} {detail.Type}</h3>
-                <p className={classes.price}>{`$${detail.Price}.00`}</p>
+                <h2 className={classes.brand}>{detail.brand}</h2>
+                <h2 className={classes.name}>{detail.name}</h2>
+                <h3 className={classes.type}>{detail.gender} {detail.type}</h3>
+                <p className={classes.price}>{`$${detail.price}.00`}</p>
 
-                {size === -1 ? (
+                {shoes_size === -1 ? (
                     <>
                         <p className={classes.size}>Selected size: </p>
                         <select className={classes.select}>
-                            <option value="0">{detail.Size}</option>
+                            <option value="0">{detail.size}</option>
                         </select>
                     </>
                 ) : (

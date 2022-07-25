@@ -13,7 +13,7 @@ export default async function getProduct(req, res) {
     const getProduct = await prisma.shoes.findMany(
         {
             where: {
-                ShoesID: Number(shoesId),
+                shoesid: Number(shoesId),
             }
         }
     );
