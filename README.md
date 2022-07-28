@@ -12,6 +12,7 @@
 This is a sneaker shop website that uses Next.js framework  
 Website features:
 * ReactJs Components
+* ReactJs Context
 * CSS module
 * Pages & File-based Routing
 * Dynamic Api Routes
