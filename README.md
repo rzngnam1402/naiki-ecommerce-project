@@ -9,11 +9,12 @@
 * [Contacts](#contacts)
 
 ## About <a name="about"></a>
-This is a sneaker shop website that uses Next.js framework  
-Website features:
+This is a sneaker shop website that uses Next.js framework. This website implements postgreSQL database into an e-commerce project. It illustrates every products in the database and supports add-to-cart features.  This project is in development for 3 weeks and will continue to be updated.  
+  
+Website's techonology features:  
 * ReactJs Components
 * ReactJs Context
-* CSS module
+* CSS modules
 * Pages & File-based Routing
 * Dynamic Api Routes
 * PostgreSQL cloud databases
@@ -52,10 +53,10 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Issues <a name="issues"></a>
-Please generate Github issue if you found bug in any version. We are try to be responsive to resolve the issue.
+Please generate Github issues if you found bugs in any version. We will try to be responsive to resolve the issues.
 
 ## Author <a name="author"></a>
-Design and code is completely written by rzngnam1402 with the SQL-databases help of CodingMikel. We are happy to welcome the contributors work for out all repositories.
+Design and code is completely written by [rzngnam1402](https://github.com/rzngnam1402) with the SQL-databases help of [CodingMikel](https://github.com/CodingMikel?tab=repositories). We are happy to welcome the contributors work for out all repositories.
 
 ## Contacts <a name="contacts"></a>
 * Google Gmail: legiangnam1402@gmail.com
