@@ -9,7 +9,7 @@
 * [Contacts](#contacts)
 
 ## About <a name="about"></a>
-This is a sneaker shop website that uses Next.js framework. This website implements postgreSQL database into an e-commerce project. It illustrates every products in the database and supports add-to-cart features.  This project is in development for 3 weeks and will continue to be updated.  
+This is a sneaker shop website that uses Next.js framework. This website implements postgreSQL database into an e-commerce project. It illustrates every products in the database and supports feedback-form and add-to-cart features.  This project is in development for 3 weeks and will continue to be updated.  
   
 Website's techonology features:  
 * ReactJs Components
