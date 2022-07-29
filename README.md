@@ -1,24 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Naiki - a Fullstack Sneaker Shop Website using NextJS framework
 
-## Getting Started
+## Tables of Contents   
+* [About](#about)
+* [Getting Started](#getting-started)
+* [Learn More](#learn-more)
+* [Issues](#issues)
+* [Author](#author)
+* [Contacts](#contacts)
 
-First, run the development server:
+## About <a name="about"></a>
+This is a sneaker shop website that uses Next.js framework. This website implements postgreSQL database into an e-commerce project. It illustrates every products in the database and supports add-to-cart features.  This project is in development for 3 weeks and will continue to be updated.  
+  
+Website's techonology features:  
+* ReactJs Components
+* ReactJs Context
+* CSS modules
+* Pages & File-based Routing
+* Dynamic Api Routes
+* PostgreSQL cloud databases
+* Object Relational Mapping - Prisma
 
-```bash
-npm run dev
-# or
-yarn dev
+You can see a live demo at [naiki-ecommerce-project.vercel.app](https://naiki-ecommerce-project.vercel.app)
+
+## Getting Started <a name="getting-started"></a>
+* Clone from Github  
+```  
+git clone https://github.com/rzngnam1402/naiki-ecommerce-project.git  
 ```
+* Install node_modules
+```  
+npm install  
+# or  
+yarn install
+```
+* Run the development server
+``` 
+npm run dev  
+# or  
+yarn run dev
+```  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://localhost:3000](https://localhost:3000) with your browser to see the result.  
+_Note: If you have trouble with missing packages please install the dependencies in package.json file_
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
+## Learn More <a name="learn-more"></a>
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -27,8 +52,13 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Issues <a name="issues"></a>
+Please generate Github issues if you found bugs in any version. We will try to be responsive to resolve the issues.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author <a name="author"></a>
+Design and code is completely written by [rzngnam1402](https://github.com/rzngnam1402) with the SQL-databases help of [CodingMikel](https://github.com/CodingMikel?tab=repositories). We are happy to welcome the contributors work for out all repositories.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contacts <a name="contacts"></a>
+* Google Gmail: legiangnam1402@gmail.com
+* Outlook: nam.lg205004@sis.hust.edu.vn
+
