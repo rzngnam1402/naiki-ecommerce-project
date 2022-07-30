@@ -2,6 +2,7 @@
 
 ## Tables of Contents   
 * [About](#about)
+* [Website Features](#website-features)
 * [Getting Started](#getting-started)
 * [Learn More](#learn-more)
 * [Issues](#issues)
@@ -21,6 +22,20 @@ Website's techonology features:
 * Object Relational Mapping - Prisma
 
 You can see a live demo at [naiki-ecommerce-project.vercel.app](https://naiki-ecommerce-project.vercel.app)
+
+## Website Features <a name="website-features"></a>
+
+### Latest features  
+* Fetch and show all products and brands
+* Fetch and show detail of each product and each brand
+* Add products to cart
+* Send feedbacks and customer infomation
+* Show featured sneakers, sneakers owl carousel
+
+### Features to be updated in the near future:  
+* Sort products using search bar
+* Login Authentication
+* Payments method - Stripe
 
 ## Getting Started <a name="getting-started"></a>
 * Clone from Github  
