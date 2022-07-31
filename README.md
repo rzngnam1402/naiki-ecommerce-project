@@ -73,7 +73,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 Please generate Github issues if you found bugs in any version. We will try to be responsive to resolve the issues.
 
 ## Author <a name="author"></a>
-Design and code is completely written by [rzngnam1402](https://github.com/rzngnam1402) with the SQL-databases help of [CodingMikel](https://github.com/CodingMikel?tab=repositories). We are happy to welcome the contributors work for out all repositories.
+Webpage design and code is completely written by [rzngnam1402](https://github.com/rzngnam1402) with the database-desgin help of [CodingMikel](https://github.com/CodingMikel?tab=repositories). We are happy to welcome the contributors work for out all repositories.
 
 ## Contacts <a name="contacts"></a>
 * Google Gmail: legiangnam1402@gmail.com
