@@ -12,7 +12,7 @@
 ## About <a name="about"></a>
 This is a sneaker shop website that uses Next.js framework. This website implements postgreSQL database into an e-commerce project. It illustrates every products in the database and supports feedback-form and add-to-cart features.  This project is in development for 3 weeks and will continue to be updated.  
     
-Project timeline : 05/07/2022 - Present (Continue to be updated)
+Project's timeline : 05/07/2022 - Present
   
 Website's techonology features:  
 * ReactJs Components
@@ -31,8 +31,8 @@ You can see a live demo at [naiki-ecommerce-project.vercel.app](https://naiki-ec
 * Fetch and show all products and brands
 * Fetch and show detail of each product and each brand
 * Add products to cart
-* Send feedbacks and customer infomation
-* Show featured sneakers, sneakers owl carousel
+* Send feedbacks and customers's information
+* Show featured sneakers, sneakers carousel
 
 ### Features to be updated in the near future:  
 * Sort products using search bar
