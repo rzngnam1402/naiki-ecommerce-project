@@ -2,7 +2,7 @@ const { PrismaClient } = require('@prisma/client')
 
 const prisma = new PrismaClient()
 
-async function updateCustomer(req, res) {
+async function deleteCustomer(req, res) {
     await prisma.customer.delete({
         where: {
             customerid: 10,
@@ -10,7 +10,7 @@ async function updateCustomer(req, res) {
     })
 }
 
-updateCustomer()
+deleteCustomer()
     .then(async () => {
         await prisma.$disconnect()
     })
