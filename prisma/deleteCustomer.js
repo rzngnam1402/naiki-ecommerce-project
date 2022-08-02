@@ -3,14 +3,9 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
 async function updateCustomer(req, res) {
-    await prisma.customer.update({
+    await prisma.customer.delete({
         where: {
-            customerid: 4,
-        },
-        data: {
-            name: "Kien",
-            tel: "0988777626",
-            email: "Kien@xin.com"
+            customerid: 10,
         }
     })
 }
