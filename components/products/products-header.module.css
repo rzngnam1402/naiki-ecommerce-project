@@ -23,9 +23,17 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
     .header__container {
         width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header__title {
+        text-align: center;
+        margin-left: 0rem;
     }
 }
 

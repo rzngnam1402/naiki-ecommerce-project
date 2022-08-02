@@ -10,7 +10,7 @@
 }
 
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
     .list {
         width: 100%;
         justify-content: flex-start;
