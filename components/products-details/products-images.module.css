@@ -10,7 +10,7 @@
     
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1536px) {
     .container {
         max-width: 500px;
         margin: 6rem 32rem 6rem 8rem;
