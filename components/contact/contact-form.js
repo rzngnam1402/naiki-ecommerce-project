@@ -56,7 +56,6 @@ const ContactForm = () => {
                             placeholder="Your Name"
                             pattern="^[A-Za-z0-9]{3,16}$"
                             required
-                            onChange={onChange}
                             ref={nameInputRef}
                         />
                         <input className={classes.email_input}
