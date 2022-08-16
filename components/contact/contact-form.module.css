@@ -69,3 +69,19 @@
 .content button:hover {
     opacity: .8;
 }
+
+.name_span,
+.email_span,
+.phone_span {
+    grid-column: 1 / span 2;
+    font-size: 15px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+.name_input:invalid~.name_span,
+.email_input:invalid~.email_span,
+.phone_input:invalid~.phone_span {
+    display: block;
+}
