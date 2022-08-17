@@ -33,6 +33,7 @@ You can see a live demo at [naiki-ecommerce-project.vercel.app](https://naiki-ec
 * Add products to cart
 * Send feedbacks and customers's information
 * Show featured sneakers, sneakers carousel
+* Validate form
 
 ### Features to be updated in the near future:  
 * Sort products using search bar
