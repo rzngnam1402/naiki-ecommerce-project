@@ -12,7 +12,7 @@
 ## About <a name="about"></a>
 This is a sneaker shop website that uses Next.js framework. This website implements postgreSQL database into an e-commerce project. It illustrates every products in the database and supports feedback-form and add-to-cart features.  This project is in development for 3 weeks and will continue to be updated.  
     
-Project's timeline : 05/07/2022 - Present
+Project's timeline : 05/07/2022 - 20/07/2022
   
 Website's techonology features:  
 * ReactJs Components
