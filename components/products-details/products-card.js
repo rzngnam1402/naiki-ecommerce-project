@@ -49,7 +49,7 @@ const ProductsCard = (props) => {
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
-    }, [2000])
+    }, [])
 
     return (
         <HideOn atHeight height={2345}>
