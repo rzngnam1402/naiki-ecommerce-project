@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import classes from './products-item.module.css'
 import Image from 'next/image'
 import Link from 'next/link'

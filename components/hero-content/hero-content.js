@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import classes from './hero-content.module.css'
 import Link from 'next/dist/client/link'
 import Aos from 'aos'

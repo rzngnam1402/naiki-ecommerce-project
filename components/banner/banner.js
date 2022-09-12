@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import classes from './banner.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTag, faTruck, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'

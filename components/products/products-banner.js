@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './products-banner.module.css'
 
 const ProductsBanner = () => {

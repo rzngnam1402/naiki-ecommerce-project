@@ -17,7 +17,9 @@ const CartItem = (props) => {
     return (
         <li key={data.shoesid} className={classes["cart-item"]}>
             <div className={classes["item-name"]}>
-                <img className={classes.img} src={data.image + ".jpg"} alt={data.name} />
+                <picture>
+                    <img className={classes.img} src={data.image + ".jpg"} alt={data.name} />
+                </picture>
                 <h2>{data.name}</h2>
             </div>
             <p className={classes["item-price"]}>

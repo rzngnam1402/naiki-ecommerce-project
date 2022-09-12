@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './contact-header.module.css'
 
 const ContactHeader = () => {
