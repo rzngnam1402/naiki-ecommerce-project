@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import { useEffect, useContext } from 'react'
 import classes from './products-card.module.css'
 import ShoppingCartContext from '../../store/shopping-cart-context'
 import Aos from 'aos'

@@ -1,12 +1,14 @@
-import React from 'react'
 import classes from './preview.module.css'
+import Image from 'next/image'
 
 const Item = (props) => {
-    const { key, name, src } = props
+    const { src } = props
 
     return (
         <div className={classes.container}>
-            <img src={src} alt="" />
+            <picture>
+                <img src={src} alt={src} />
+            </picture>
         </div>
     )
 }

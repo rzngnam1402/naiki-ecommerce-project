@@ -1,4 +1,3 @@
-import React from 'react'
 import ProductsItem from './products-item'
 import classes from './products-list.module.css'
 

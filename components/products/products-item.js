@@ -20,7 +20,7 @@ const ProductsItem = (props) => {
 
     useEffect(() => {
         Aos.init({ duration: 1000 });
-    }, [1000])
+    }, [])
 
     return (
         <div data-aos="fade-up" className={classes.item__container}>
