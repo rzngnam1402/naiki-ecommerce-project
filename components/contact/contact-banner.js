@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './contact-banner.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -39,7 +38,7 @@ const ContactBanner = () => {
                         <h2>Social Media</h2>
                     </div>
                     <div className={classes.subtitle}>
-                        <p>Facebook: Nguyen Duc Minh</p>
+                        <p>Facebook: Le Giang Nam</p>
                     </div>
                 </div>
             </div>

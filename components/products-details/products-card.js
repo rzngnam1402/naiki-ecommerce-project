@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import { useEffect, useContext } from 'react'
 import classes from './products-card.module.css'
 import ShoppingCartContext from '../../store/shopping-cart-context'
 import Aos from 'aos'
@@ -49,7 +49,7 @@ const ProductsCard = (props) => {
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
-    }, [2000])
+    }, [])
 
     return (
         <HideOn atHeight height={2345}>

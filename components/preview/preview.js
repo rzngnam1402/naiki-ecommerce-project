@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Carousel from 'react-elastic-carousel'
 import Item from './preview-item.js'
 import classes from './preview.module.css'
@@ -58,7 +58,7 @@ const sneakers = [
 const Preview = (props) => {
     useEffect(() => {
         Aos.init({ duration: 500 });
-    }, [500])
+    }, [])
     return (
         <section data-aos="fade-up" className={classes.section}>
             <div className={classes.header}>

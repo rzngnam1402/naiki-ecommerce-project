@@ -1,4 +1,3 @@
-import React from 'react'
 import CartBill from './cart-bill'
 import classes from "./cart-content.module.css"
 import CartList from './cart-list'

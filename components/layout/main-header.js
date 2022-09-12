@@ -1,14 +1,16 @@
-import React from 'react'
 import Link from 'next/link'
 import classes from './main-header.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image'
 
 const MainHeader = () => {
     return (
         <header className={classes.header}>
             <Link href="/">
-                <img className={classes.logo} src="/images/logo/logo.png" alt="logo" />
+                <div className={classes.logo}>
+                    <Image width='160' height='48' src="/images/logo/logo.png" alt="logo" />
+                </div>
             </Link>
             <nav >
                 <ul className={classes.nav__links}>

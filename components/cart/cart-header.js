@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from "./cart-header.module.css"
 
 const CartHeader = () => {

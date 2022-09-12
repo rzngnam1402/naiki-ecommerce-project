@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import classes from './products-item.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -20,7 +20,7 @@ const ProductsItem = (props) => {
 
     useEffect(() => {
         Aos.init({ duration: 1000 });
-    }, [1000])
+    }, [])
 
     return (
         <div data-aos="fade-up" className={classes.item__container}>
