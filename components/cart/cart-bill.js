@@ -42,13 +42,13 @@ const CartBill = () => {
                 });
             })
 
+        let lineItems = [];
+        cart.map((item) => {
+            lineItems.push({ price: item.stripeid, quantity: 1 })
+        });
+
         checkout({
-            lineItems: [
-                {
-                    price: "price_1LhPZcHbWieXXAGk5AfmY2pS",
-                    quantity: 1
-                }
-            ]
+            lineItems
         })
     }
 
