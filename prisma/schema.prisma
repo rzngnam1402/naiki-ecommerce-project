@@ -48,5 +48,6 @@ model shoes {
   gender     String?      @db.VarChar(10)
   price      Decimal?     @db.Decimal(10, 2)
   image      String?      @db.VarChar(100)
+  stripeid   String?      @db.VarChar
   billdetail billdetail[]
 }
