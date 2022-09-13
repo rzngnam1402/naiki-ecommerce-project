@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import classes from "./cart-bill.module.css"
 import ShoppingCartContext from '../../store/shopping-cart-context'
+import { checkout } from '../../stripe/checkout';
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -18,7 +19,6 @@ const CartBill = () => {
         event.preventDefault();
 
         const price = totalPrice;
-
 
         price = Number(price.substring(1))
 
@@ -41,7 +41,15 @@ const CartBill = () => {
                     throw new Error(data.message);
                 });
             })
-        alert("checkout successfully !");
+
+        let lineItems = [];
+        cart.map((item) => {
+            lineItems.push({ price: item.stripeid, quantity: 1 })
+        });
+
+        checkout({
+            lineItems
+        })
     }
 
     return (
