@@ -34,7 +34,7 @@ You can see a live demo at [naiki-ecommerce-project.vercel.app](https://naiki-ec
 * Send feedbacks and customers's information
 * Show featured sneakers, sneakers carousel
 * Validate form
-* Payments method - Stripe
+* Payments method - Stripe (Updated 13/09/2022)
 
 ### Features to be implemented in the near future:  
 * Sort products using search bar
